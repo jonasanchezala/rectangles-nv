@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "d8c21d7f-66bb-4a1d-b139-0facfe73b891",
+		"name": "Rectangles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7781790"
+	},
+	"item": [
+		{
+			"name": "Intersection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rectangleA\": {\r\n    \"x\": 0,      \r\n    \"y\": 0,\r\n    \"width\": 5,  \r\n    \"height\": 5  \r\n  },\r\n  \"rectangleB\": {\r\n    \"x\": 2,     \r\n    \"y\": 3,      \r\n    \"width\": 10, \r\n    \"height\": 5\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/intersection",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"intersection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Containment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rectangleA\": {\r\n    \"x\": 0,      \r\n    \"y\": 0,\r\n    \"width\": 5,  \r\n    \"height\": 5  \r\n  },\r\n  \"rectangleB\": {\r\n    \"x\": 2,     \r\n    \"y\": 3,      \r\n    \"width\": 1, \r\n    \"height\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/containment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"containment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adjacency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rectangleA\": {\r\n    \"x\": 0,      \r\n    \"y\": 0,\r\n    \"width\": 5,  \r\n    \"height\": 5  \r\n  },\r\n  \"rectangleB\": {\r\n    \"x\": 5,     \r\n    \"y\": 0,      \r\n    \"width\": 5, \r\n    \"height\": 5\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/adjacency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"adjacency"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
